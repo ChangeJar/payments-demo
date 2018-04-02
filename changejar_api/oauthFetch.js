@@ -36,8 +36,8 @@ function fetchOAuthToken()  {
     })
     .then(httpHelpers.checkOAuthHttpStatus)
     .then(httpHelpers.parseJSON)
-    .then(oauthToken => {
-        oauthToken = oauthToken;
+    .then(token => {
+        oauthToken = token;
         return oauthToken;
     });
 }
